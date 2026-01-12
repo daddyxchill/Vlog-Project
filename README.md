@@ -14,25 +14,7 @@ This project serves as a portfolio/vlog platform with modular components and a c
 
 
 📂 Project Structure
-VLOG-PROJECT/
-├── client/          # React frontend
-│   ├── src/
-│   │   ├── components/
-│   │   ├── App.tsx
-│   │   └── index.tsx
-│   ├── package.json
-│   └── tsconfig.json
-│
-├── server/          # .NET backend
-│   ├── backend/
-│   │   ├── Controllers/
-│   │   ├── Program.cs
-│   │   ├── appsettings.json
-│   │   └── backend.csproj
-│   └── backend.sln
-│
-├── .gitignore
-└── README.md
+<pre>```VLOG-PROJECT/├── client/                 # React frontend│   ├── src/│   │   ├── components/│   │   │   ├── About.tsx│   │   │   ├── Contact.tsx│   │   │   └── WorkExperience.tsx│   │   ├── App.tsx│   │   └── index.tsx│   ├── package.json│   └── tsconfig.json├── server/                 # .NET backend│   ├── backend/│   │   ├── Controllers/│   │   ├── Program.cs│   │   └── appsettings.json│   ├── backend.csproj│   └── backend.sln├── README.md└── .gitignore```</pre>
 
 
 
@@ -91,5 +73,3 @@ Backend:
 - Connect to a database (SQL Server, PostgreSQL, or MongoDB)
 - Deploy to cloud (Azure, Vercel, or Netlify)
 
-👉 This README gives your GitHub repo a professional look and makes it easy for others (or future you) to run the project.
-Would you like me to also add a badges section (Node version, .NET version, license, etc.) at the top so your repo looks even more polished?
