@@ -1,5 +1,5 @@
 // src/api.ts
-const API_URL = 'https://localhost:7115/api/test'; // Use your backend's URL
+const API_URL = 'https://localhost:5001/api/test'; // Use your backend's URL
 
 export const fetchMessage = async () => {
     try {
