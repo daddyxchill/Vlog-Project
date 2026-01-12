@@ -1,11 +1,3 @@
-// const Home: React.FC = () => (
-//   <>
-//     <h2>Home</h2>
-//     <p>...</p>
-//   </>
-// );
-
-// export default Home;
 const Home: React.FC<{ message: string }> = ({ message }) => (
   <>
     <h2>FEDDIE SANDOVAL</h2>
