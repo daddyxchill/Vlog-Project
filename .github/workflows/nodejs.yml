@@ -1,4 +1,4 @@
-name: Node.js CI
+name: Node CI
 
 on:
   push:
@@ -11,18 +11,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '18'
+        node-version: '20'
 
     - name: Install dependencies
       run: npm install
+      working-directory: ./client
 
-    - name: Build project
+    - name: Run build
       run: npm run build --if-present
+      working-directory: ./client
 
     - name: Run tests
-      run: npm test
+      run: npm test --if-present
+      working-directory: ./client
