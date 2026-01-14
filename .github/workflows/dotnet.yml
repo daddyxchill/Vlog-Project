@@ -11,18 +11,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: '6.0.x'
+        dotnet-version: '8.0.x'   # Match your project SDK version
 
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore ./server/backend.sln
 
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ./server/backend.sln --no-restore --configuration Release
 
     - name: Run tests
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ./server/backend.sln --no-build --verbosity normal
