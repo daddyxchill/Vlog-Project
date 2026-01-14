@@ -13,10 +13,20 @@ This project serves as a portfolio/vlog platform with modular components and a c
 - Example endpoints (WeatherForecast, etc.)
 
 
-📂 Project Structure
-<pre>```VLOG-PROJECT/├── client/                 # React frontend│   ├── src/│   │   ├── components/│   │   │   ├── About.tsx│   │   │   ├── Contact.tsx│   │   │   └── WorkExperience.tsx│   │   ├── App.tsx│   │   └── index.tsx│   ├── package.json│   └── tsconfig.json├── server/                 # .NET backend│   ├── backend/│   │   ├── Controllers/│   │   ├── Program.cs│   │   └── appsettings.json│   ├── backend.csproj│   └── backend.sln├── README.md└── .gitignore```</pre>
+# Project Structure
 
-
+📦 VLOG-PROJECT
+ ┣ 📂 client → React frontend
+ ┃ ┣ 📂 src → Source code
+ ┃ ┃ ┣ 📂 components → UI building blocks
+ ┃ ┃ ┣ 📂 pages → Page views
+ ┃ ┃ ┣ 📂 assets → Images, fonts, styles
+ ┃ ┃ ┗ 📂 utils → Helper functions
+ ┣ 📂 server → Backend API
+ ┃ ┣ 📂 controllers → Route handlers
+ ┃ ┣ 📂 models → Database schemas
+ ┃ ┗ 📂 routes → API endpoints
+ ┗ 📄 README.md → Documentation
 
 ⚙️ Prerequisites
 - Frontend
