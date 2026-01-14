@@ -15,18 +15,18 @@ This project serves as a portfolio/vlog platform with modular components and a c
 
 # Project Structure
 
-📦 VLOG-PROJECT
- ┣ 📂 client → React frontend
- ┃ ┣ 📂 src → Source code
- ┃ ┃ ┣ 📂 components → UI building blocks
- ┃ ┃ ┣ 📂 pages → Page views
- ┃ ┃ ┣ 📂 assets → Images, fonts, styles
- ┃ ┃ ┗ 📂 utils → Helper functions
- ┣ 📂 server → Backend API
- ┃ ┣ 📂 controllers → Route handlers
- ┃ ┣ 📂 models → Database schemas
- ┃ ┗ 📂 routes → API endpoints
- ┗ 📄 README.md → Documentation
+VLOG-PROJECT/
+├── client/                 # React frontend
+│   ├── src/                # Source code
+│   │   ├── components/     # Reusable UI components
+│   │   ├── pages/          # Page-level views
+│   │   ├── assets/         # Images, fonts, styles
+│   │   └── utils/          # Helper functions
+├── server/                 # Backend (API, business logic)
+│   ├── controllers/        # Route handlers
+│   ├── models/             # Database schemas
+│   └── routes/             # API endpoints
+└── README.md               # Project documentation
 
 ⚙️ Prerequisites
 - Frontend
